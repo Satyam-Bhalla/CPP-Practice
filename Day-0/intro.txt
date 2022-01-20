@@ -4,6 +4,10 @@ Intro about Cpp/C++:-
 3.) It has object oriented and also have generic programming features.
 4.) Linux,Unix, Windows and Mac
 
+G++ Commands:-
+    1.) g++ fileName.cpp
+    2.) g++ -o ExecutableName.exe fileName.cpp 
+
 Git Commands:-
     1.) For cloning the repo -> git clone https://github.com/Satyam-Bhalla/CPP-B2-2022.git
     2.) For adding all our changes -> git add .
