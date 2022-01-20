@@ -1,0 +1,11 @@
+Git Commands:-
+    1.) For cloning the repo -> git clone https://github.com/Satyam-Bhalla/CPP-B2-2022.git
+    2.) For adding all our changes -> git add .
+    3.) For commiting our changes -> git commit -m "Message for commit"
+    4.) For pushing code ->  git push
+    5.) For pulling code -> git pull
+
+Other Links:-
+    1.) https://www.codeblocks.org/
+    2.) https://code.visualstudio.com/docs/cpp/config-mingw
+    3.) https://git-scm.com/
