@@ -1,3 +1,9 @@
+Intro about Cpp/C++:-
+1.) General Purpose Middle Level Programming Language.
+2.) It's a superset of C Language
+3.) It has object oriented and also have generic programming features.
+4.) Linux,Unix, Windows and Mac
+
 Git Commands:-
     1.) For cloning the repo -> git clone https://github.com/Satyam-Bhalla/CPP-B2-2022.git
     2.) For adding all our changes -> git add .
