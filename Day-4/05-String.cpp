@@ -27,8 +27,6 @@ int main()
         cout << *it1; 
     cout << endl; 
 
-
-
     string str1 = "learn grow and explore"; 
     string str2 = "learn grow"; 
     char ch[80]; 
