@@ -21,7 +21,9 @@ void bubble_sort(int arr[],int n, bool (*cmp)(int,int)){
     }
 }
 
+// Creates copies of the array
 void merge(int arr[],int l,int m,int r){
+    // Create copy arrays
     int n1 = m-l+1;
     int n2 = r-m;
 
@@ -33,6 +35,8 @@ void merge(int arr[],int l,int m,int r){
         M[j] = arr[m+1+j];
     }
 
+
+    // Compare elements from copy arrays
     int i,j,k;
     i = 0;
     j=0;
@@ -49,7 +53,7 @@ void merge(int arr[],int l,int m,int r){
         k++;
     }
 
-    // Copy elements
+    // Copy pending elements
     while(i<n1){
         arr[k] = L[i];
         i++;
@@ -74,6 +78,30 @@ void merge_sort(int arr[],int l, int r){
 }
 
 
+int partition(int a[],int s, int e){
+    int i = s-1;
+    int j = s;
+    int pivot = e;
+    for(j=s;j<=e-1;j++){
+        if(a[j]<=a[pivot]){
+            i++;
+            swap(a[i],a[j]);
+        }
+    }
+    swap(a[pivot],a[i+1]);
+    return i+1;
+}
+
+
+void quick_sort(int arr[],int s, int e){
+    if(s>=e){
+        return;
+    }
+    int p = partition(arr,s,e);
+    quick_sort(arr,s,p-1);
+    quick_sort(arr,p+1,e);
+}
+
 
 
 void display(int arr[],int n){
@@ -96,7 +124,8 @@ int main(){
     }
 
     // bubble_sort(arr,n,compare);
-    merge_sort(arr,0,n-1);
+    // merge_sort(arr,0,n-1);
+    quick_sort(arr,0,n-1);
     display(arr,n);
 
     return 0;
